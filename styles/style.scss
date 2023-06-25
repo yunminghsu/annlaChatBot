@@ -1,0 +1,223 @@
+#resultContainer::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+#resultContainer::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+  }
+  
+#resultContainer::-webkit-scrollbar-thumb {
+    background-color: #FFEFD0;
+    border-radius: 15px;
+  }
+  
+#resultContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #EBAD50;
+  }
+body{
+    width: 390px;
+    height: 740px;
+    border: 1px solid black;
+    font-family: "思源黑體";
+}
+
+.chatApp{
+    background-color: #FFEFD0;
+}
+
+.statement{
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+
+.title{
+    display: inline-block;
+    font-size:25px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    margin-left: 45px;
+}
+
+.callBtn{
+  display: inline-block;
+  background-image: url(../src/CallBtn.png);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  margin-right: 40px;
+}
+
+.replyBox{
+    height: 530px;
+    padding: 10px 10px 10px 23px;
+    overflow: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px -5px 15px 2.62px rgba(90, 82, 128, 0.05);
+    background-color: white;
+    background-image: url(../src/rabbit1.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 5% 111%;
+}
+
+.userMessage{
+    width: 150px;
+    display: inline-block;
+    // max-width: 200px;
+    margin: 10px 0 0px 120px;
+    background-color: #F5F5F5;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 30px;
+    padding: 15px 10px 10px 15px;
+    line-height: 22px;
+    word-wrap:break-word;
+}
+
+.headSticker{
+    background-image:url(../src/bearhead.png) ;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 22px;
+    transform: translate(-10px,15px);
+}
+
+.assistantMessage{
+    z-index: 1;
+    width: 200px;
+    height: auto;
+    margin:10px 0px 0 10px;
+    background-color: #FFEFD0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    padding: 15px 10px 10px 15px;
+    line-height: 22px;
+}
+
+.promptInputBox{
+    width: 300px;
+}
+
+.timeLabelUser{
+    display: flex;
+    justify-content: right;
+    margin-right: 55px;
+    margin-top: 5px;
+    margin:5px 60px 15px 0;
+    font-size: 12px;
+    font-family: "微軟正黑體";
+}
+
+.timeLabelAssitant{
+    margin: 5px 0 15px 10px;
+    font-size: 12px;
+    font-family: "微軟正黑體";
+}
+
+.inputAndButtonSection{
+    background-color: white;
+    height: 63px;
+    box-shadow: 0px -5px 15px 2.62px rgba(90, 82, 128, 0.1);
+    padding:25px 34px 9px 34px;
+}
+
+.inputBox{
+    display: flex;
+    justify-content: center;
+}
+
+.sendKey{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #FFEFD0;
+    border: 0px;
+    background-image: url(../src/send.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    margin-left: 10px;
+    padding-top: 2px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sendKey:hover{
+    background-color: #FFFBF4;
+    transition: all 0.5s;
+}
+
+.sendKey:active{
+    background-color: #FFEFD0;
+    transition: all 0.5s;
+}
+
+.promptInputBox{
+    width: 269px;
+    height: 37px;
+    border-radius: 100px;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.stopBtn{
+    display: none;
+}
+
+.resultText{
+    position: absolute;
+    top: 600px;
+    left: 170px;
+}
+
+@keyframes bouncingBalls {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ball {
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    background-color: #FFEFD0;
+    border-radius: 50%;
+    animation: bouncingBalls 1s infinite;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ball:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .ball:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  .showAnimation{
+    display: none;
+  }

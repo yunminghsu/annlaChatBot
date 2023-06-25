@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zhan-TW">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="./styles/style.css"></link>
+    <script type="module" src="app.js"></script>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <div class="chatApp">
+      <div class="statement">
+        <div class="title">
+          醫生
+        </div>
+        <a onclick="location.href='tel:0956021286'" class="callBtn"></a>
+      </div>
+      
+      <div id="resultContainer" class="replyBox">
+        <div id="boucingBall" class="container resultText showAnimation">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+      </div>
+      <div class="inputAndButtonSection">
+        <div class="inputBox">
+          <input
+          type="text"
+          id="promptInput"
+          placeholder="想聊聊些什麼？"
+          class="promptInputBox"
+        />
+        <button
+            id="generateBtn"
+            class="sendKey"
+        >
+        </button>
+            <button
+              id="stopBtn"
+              disabled
+              class="stopBtn"
+            >
+              停止產生
+            </button>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
